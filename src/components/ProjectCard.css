@@ -1,0 +1,50 @@
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 14px;
+  text-align: left;
+}
+
+.project-body h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.project-body p {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.project-body .btn {
+  font-size: 0.85rem;
+  padding: 6px 14px;
+}
