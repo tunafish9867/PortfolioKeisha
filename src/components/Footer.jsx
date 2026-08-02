@@ -16,7 +16,7 @@ function Footer() {
             <span className="logo-badge">KM</span>
             Keisha
           </div>
-          <p>Front-end developer building clean, fast websites.</p>
+          <p>Data Analyst & Automation Specialist transforming complex data into actionable insights and scalable, efficient systems.</p>
         </div>
 
         <div className="footer-col">
@@ -32,19 +32,10 @@ function Footer() {
         <div className="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li>+(234) 567-8910</li>
-            <li>keisha020102@gmail.com</li>
-            <li>Your City, Country</li>
+            <li>09474878010</li>
+            <li>keishalorejo@gmail.com</li>
+            <li>Davao City, Philippines</li>
           </ul>
-        </div>
-
-        <div className="footer-col footer-newsletter">
-          <h4>Get the latest updates</h4>
-          <p>Occasional emails about new projects. No spam.</p>
-          <form onSubmit={handleSubscribe}>
-            <input type="email" placeholder="Your email" required />
-            <button type="submit" aria-label="Subscribe">→</button>
-          </form>
         </div>
       </div>
 
