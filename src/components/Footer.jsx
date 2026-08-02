@@ -3,18 +3,13 @@ import './Footer.css';
 function Footer() {
   const year = new Date().getFullYear();
 
-  function handleSubscribe(e) {
-    e.preventDefault();
-    alert('Hook this up to your email service of choice!');
-  }
-
   return (
     <footer id="contact" className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
             <span className="logo-badge">KM</span>
-            Keisha
+            Keisha Lorejo
           </div>
           <p>Data Analyst & Automation Specialist transforming complex data into actionable insights and scalable, efficient systems.</p>
         </div>
@@ -39,13 +34,6 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom container">
-        <span>Copyright © {year} Keisha. All rights reserved.</span>
-        <div className="footer-legal">
-          <a href="/#">Terms of Service</a>
-          <a href="/#">Privacy Policy</a>
-        </div>
-      </div>
     </footer>
   );
 }

@@ -6,7 +6,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  grid-template-columns: 1.4fr 0.5fr 0.5fr;
   gap: 40px;
   padding-bottom: 48px;
 }
@@ -58,42 +58,6 @@
 
 .footer-col ul a:hover {
   color: var(--accent);
-}
-
-.footer-newsletter p {
-  font-size: 0.85rem;
-  margin-bottom: 16px;
-}
-
-.footer-newsletter form {
-  display: flex;
-  gap: 8px;
-}
-
-.footer-newsletter input {
-  flex: 1;
-  min-width: 0;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  padding: 12px 18px;
-  color: var(--text);
-  font-family: inherit;
-}
-
-.footer-newsletter input:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-
-.footer-newsletter button {
-  width: 44px;
-  height: 44px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--accent-gradient);
-  color: #1a0d08;
-  font-size: 1.1rem;
 }
 
 .footer-bottom {
