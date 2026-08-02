@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const NAV_LINKS = [
-  { label: 'Home', to: '/PortfolioKeisha/', type: 'route' },
+  { label: 'Home', to: '/', type: 'route' },
   { label: 'Projects', to: '/projects', type: 'route' },
   { label: 'Skills', to: '/#skills', type: 'anchor' },
   { label: 'About', to: '/#about', type: 'anchor' },
