@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="navbar-wrapper">
       <nav className="navbar container">
         <Link to="/" className="navbar-logo" onClick={() => setIsOpen(false)}>
-          <span className="logo-badge">KM</span>
+          <span className="logo-badge">KL</span>
           Keisha
         </Link>
 

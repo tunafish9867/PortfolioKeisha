@@ -8,7 +8,7 @@ function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
-            <span className="logo-badge">KM</span>
+            <span className="logo-badge">KL</span>
             Keisha Lorejo
           </div>
           <p>Data Analyst & Automation Specialist transforming complex data into actionable insights and scalable, efficient systems.</p>
