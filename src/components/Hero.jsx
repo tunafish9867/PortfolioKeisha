@@ -39,7 +39,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="/#contact" className="btn btn-primary">Contact me</a>
-            <a href="public/Keisha_Lorejo_Resume.pdf" download="Keisha_Lorejo_Resume.pdf" className="btn btn-outline">Download resume</a>
+            <a href="/Keisha_Lorejo_Resume.pdf" download="Keisha_Lorejo_Resume.pdf" className="btn btn-outline">Download resume</a>
           </div>
         </div>
       </div>
