@@ -18,7 +18,7 @@ export const skills = [
   {
     id: 'api-integrations',
     title: 'API & Webhook Integrations',
-    image: '/skills/api-integrations.jpg',
+    image: '/skills/api-integrations.png',
     description:
       'Connecting disparate platforms — CRMs, accounting software, cloud storage, and email — through REST APIs and custom webhooks so data flows automatically between systems.',
     filterTech: ['Webhooks', 'API'],
@@ -26,7 +26,7 @@ export const skills = [
   {
     id: 'data-analysis',
     title: 'Data Analysis & Statistical Modeling',
-    image: '/skills/data-analysis.jpg',
+    image: '/skills/data-analysis.png',
     description:
       'Applying text mining and statistical modeling techniques in Python and R — including structural topic modeling and similarity analysis — to extract insight from large, unstructured datasets.',
     filterTech: ['Python', 'R', 'Structural Topic Modeling', 'Word2Vec'],
@@ -34,7 +34,7 @@ export const skills = [
   {
     id: 'interactive-dashboards',
     title: 'Interactive Dashboards & Visualization',
-    image: '/skills/interactive-dashboards.jpg',
+    image: '/skills/interactive-dashboards.png',
     description:
       'Building interactive dashboards that let non-technical stakeholders explore data and results themselves, rather than reading a static report.',
     filterTech: ['Shiny'],
