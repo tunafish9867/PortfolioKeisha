@@ -68,25 +68,25 @@ export const projects = [
           'Exports the letter to PDF, attaches it to the ClickUp task, and posts a signature-reminder comment.',
       },
       {
-        image: '/projects/b2b-partner-lifecycle/step3.png',
+        image: '/projects/b2b-partner-lifecycle/step4.png',
         title: 'Monthly Spend Check',
         description:
           'Each branch subscenario calculates a dynamic date range and queries QuickBooks for year-to-date and prior-month invoice totals.',
       },
       {
-        image: '/projects/b2b-partner-lifecycle/step3.png',
+        image: '/projects/b2b-partner-lifecycle/step5.png',
         title: 'Renewal-Month Routing',
         description:
-          'Checks whether the current month is the partner&apos,s renewal month; if not, sends a routine progress-update email.',
+          "Checks whether the current month is the partner's renewal month; if not, sends a routine progress-update email.",
       },
       {
-        image: '/projects/b2b-partner-lifecycle/step3.png',
+        image: '/projects/b2b-partner-lifecycle/step6.png',
         title: 'Threshold Evaluationg',
         description:
           'In the renewal month, compares total invoiced amount against the ₱1,000,000 threshold to decide renew vs. expire.',
       },
       {
-        image: '/projects/b2b-partner-lifecycle/step3.png',
+        image: '/projects/b2b-partner-lifecycle/step7.png',
         title: 'Renewal or Expiration',
         description:
           'If met: creates a new one-year task tagged "renewed," closes the old one, sends a confirmation. If not met: marks the partnership "ended" and sends an expiration notice.',
