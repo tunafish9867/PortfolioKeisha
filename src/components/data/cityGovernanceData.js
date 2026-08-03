@@ -3,7 +3,7 @@
 export const cityGovernanceData = [
   { city: 'Pasay', onlineServices: 543, telecomInfra: 697, humanCapital: 608, unclassified: 53, egovIndex: 0.47, cmciScore: 56.78 },
   { city: 'Iloilo', onlineServices: 183, telecomInfra: 188, humanCapital: 184, unclassified: 0, egovIndex: 0.40, cmciScore: 51.04 },
-  { city: 'Paranaque', onlineServices: 22, telecomInfra: 27, humanCapital: 22, unclassified: 3, egovIndex: 0.33, cmciScore: 36.30 },
+  { city: 'Muntinlupa', onlineServices: 22, telecomInfra: 27, humanCapital: 22, unclassified: 3, egovIndex: 0.33, cmciScore: 36.30 },
   { city: 'Cagayan de Oro', onlineServices: 5, telecomInfra: 6, humanCapital: 6, unclassified: 0, egovIndex: 0.67, cmciScore: 48.61 },
   { city: 'Las Pinas', onlineServices: 0, telecomInfra: 2, humanCapital: 0, unclassified: 15, egovIndex: 0.33, cmciScore: 35.19 },
   { city: 'Iligan', onlineServices: 9, telecomInfra: 12, humanCapital: 12, unclassified: 0, egovIndex: 0.67, cmciScore: 42.05 },
