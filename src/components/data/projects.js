@@ -77,7 +77,7 @@ export const projects = [
         image: '/projects/b2b-partner-lifecycle/step3.png',
         title: 'Renewal-Month Routing',
         description:
-          'Checks whether the current month is the partner&apos;s renewal month; if not, sends a routine progress-update email.',
+          'Checks whether the current month is the partner&apos,s renewal month; if not, sends a routine progress-update email.',
       },
       {
         image: '/projects/b2b-partner-lifecycle/step3.png',
