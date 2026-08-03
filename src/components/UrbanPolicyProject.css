@@ -1,0 +1,80 @@
+.urban-policy {
+  background: var(--bg-dark, #201446);
+  color: #fff;
+  padding: 64px 0 96px;
+}
+
+.up-description {
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 20px 0 28px;
+}
+
+.up-stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 40px 0 56px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.up-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.up-stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.up-stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.up-chart-block {
+  margin-bottom: 64px;
+}
+
+.up-chart-block h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  margin-bottom: 4px;
+}
+
+.up-chart-caption {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.up-methodology {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.up-methodology summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.up-methodology ol {
+  margin: 20px 0 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.up-methodology li {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 720px) {
+  .up-stats {
+    gap: 24px;
+  }
+}

@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: 'city-to-city-urban-policy',
+    title: 'City-to-City Learning Through Urban Policy Analysis',
+    image: '/projects/city-to-city-urban-policy/thumbnail.jpg',
+    techStack: ['Python', 'R', 'Structural Topic Modeling', 'Word2Vec', 'Shiny'],
+    description:
+      'Text-mining pipeline analyzing municipal ordinances from 22 Philippine cities to build an E-Governance Index and surface legislative themes.',
+  },
+  {
     id: 'b2b-partner-lifecycle',
     title: 'B2B Partner Lifecycle, Discount & Renewal Automation Engine',
     image: '/projects/b2b-partner-lifecycle/banner.jpg',
