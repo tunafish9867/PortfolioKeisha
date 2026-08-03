@@ -1,50 +1,8 @@
 export const projects = [
   {
-    id: 'ghl-lead-automation',
-    title: 'Automated Lead Routing System',
-    techStack: ['GHL', 'Make.com', 'Shopify'],
-    banner: '/projects/ghl-lead-automation/banner.jpg', // full-width top image
-    image: '/projects/b2b-partner-lifecycle/banner.jpg',
-    description:
-      'An automated pipeline that captures leads, tags them by source, and routes them to the right sales rep without manual entry.',
-    steps: [
-      {
-        image: '/projects/ghl-lead-automation/step1.png',
-        title: 'Capture',
-        description:
-          'Leads submit a form on the website, which triggers a webhook into Make.com carrying their contact details and source.',
-      },
-      {
-        image: '/projects/ghl-lead-automation/step2.png',
-        title: 'Process',
-        description:
-          'Make.com parses the payload, checks it against existing contacts in GHL, and creates or updates the record accordingly.',
-      },
-      {
-        image: '/projects/ghl-lead-automation/step3.png',
-        title: 'Route',
-        description:
-          'Based on lead source and value, the workflow assigns an owner and fires an internal Slack notification to the sales team.',
-      },
-    ],
-    results: [
-      {
-        title: 'Time Saved',
-        description: 'Cut manual lead entry from ~15 minutes to under 10 seconds per lead.',
-      },
-      {
-        title: 'Zero Duplicates',
-        description: 'Eliminated duplicate contact records across GHL and Shopify entirely.',
-      },
-      {
-        title: 'Faster Response',
-        description: 'Sales reps now get notified within seconds instead of hours.',
-      },
-    ],
-  },
-  {
     id: 'b2b-partner-lifecycle',
     title: 'B2B Partner Lifecycle, Discount & Renewal Automation Engine',
+    image: '/projects/b2b-partner-lifecycle/banner.jpg',
     techStack: ['Make.com', 'ClickUp API', 'QuickBooks Online API', 'OpenAI (AI routing agent)' ,'Google Docs API', 'Google Drive', 'Custom Webhooks', 'Gmail'],
     banner: '/projects/b2b-partner-lifecycle/banner.jpg',
     description:
