@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import UrbanPolicyProject from './components/UrbanPolicyProject';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/projects/city-to-city-urban-policy" element={<UrbanPolicyProject />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
