@@ -117,4 +117,59 @@ export const projects = [
       },
     ],
   },
+  {
+    id: 'slab-quote-calculator',
+    title: 'Multi-Branch Slab Quote Calculator',
+    image: '/projects/slab-quote-calculator/banner.jpg',
+    techStack: ['React', 'Vite', 'Tailwind CSS', 'jsPDF'],
+    banner: '/projects/slab-quote-calculator/banner.jpg',
+    description:
+      'A quoting tool for a stone and slab supplier with multiple regional branches, each carrying its own material inventory and pricing. Staff select a branch, add slab dimensions and materials, and get an instant, itemized customer quote as a downloadable PDF.',
+    steps: [
+      {
+        image: '/projects/slab-quote-calculator/step1.jpg',
+        title: 'Select Branch',
+        description:
+          'Staff pick the nearest branch (North, South, East, West, or Central), which loads that branch\'s specific material inventory and price list — each branch prices materials differently based on local supply.',
+      },
+      {
+        image: '/projects/slab-quote-calculator/step2.jpg',
+        title: 'Add Slabs',
+        description:
+          'For each slab needed, staff enter length, width, and quantity, then choose a material from that branch\'s inventory, grouped by stone category.',
+      },
+      {
+        image: '/projects/slab-quote-calculator/step3.jpg',
+        title: 'Calculate Delivery & Hauling',
+        description:
+          'The app applies a tiered per-kilometer delivery rate based on distance to the branch, plus a per-floor hauling surcharge based on slab count and building floor number.',
+      },
+      {
+        image: '/projects/slab-quote-calculator/step4.jpg',
+        title: 'Live Order Summary',
+        description:
+          'A running cost table totals material costs per slab, the delivery fee, and the hauling fee into a grand total that updates instantly as details change.',
+      },
+      {
+        image: '/projects/slab-quote-calculator/step5.png',
+        title: 'Export Quote as PDF',
+        description:
+          'One click generates a branded, itemized PDF quote — branch, date, line items, and grand total — ready to send straight to the customer.',
+      },
+    ],
+    results: [
+      {
+        title: 'Instant, Consistent Quotes',
+        description: 'Replaced manual price lookups and math with a quote generated in seconds, the same way every time.',
+      },
+      {
+        title: 'Eliminated Cross-Branch Pricing Errors',
+        description: "Branch-specific price lists prevent staff from accidentally quoting a customer using a different region's rates.",
+      },
+      {
+        title: 'Professional, Ready-to-Send Deliverables',
+        description: 'Every quote leaves the tool as a polished PDF instead of a handwritten or ad hoc estimate.',
+      },
+    ],
+  },
 ];
