@@ -91,18 +91,12 @@ export const projects = [
       },
       {
         image: '/projects/ghl-product-updates/step2.png',
-        title: 'Change Detected',
-        description:
-          'A Zapier trigger watches the sheet for row updates, specifically monitoring the total-price column for a new value.',
-      },
-      {
-        image: '/projects/ghl-product-updates/step3.png',
         title: 'Price Formatted for the API',
         description:
           'Zapier pulls the updated value and maps it to the corresponding product ID and price field expected by the GoHighLevel API.',
       },
       {
-        image: '/projects/ghl-product-updates/step5.png',
+        image: '/projects/ghl-product-updates/step3.png',
         title: 'Product Price Updated in GHL',
         description:
           "GoHighLevel processes the request, updates the live product and the new price is reflected in GoHighLevel within 2-3 minutes of the original spreadsheet edit, completing the loop. — no manual entry required.",
