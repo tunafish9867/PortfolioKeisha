@@ -39,10 +39,6 @@ export default function Navbar() {
           )}
         </ul>
 
-        <a href="/#contact" className="btn btn-primary navbar-cta">
-          Let&apos;s Talk
-        </a>
-
         <button
           className={`navbar-toggle ${isOpen ? 'open' : ''}`}
           aria-label="Toggle menu"
