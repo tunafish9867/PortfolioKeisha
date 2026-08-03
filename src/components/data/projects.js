@@ -4,6 +4,7 @@ export const projects = [
     title: 'Automated Lead Routing System',
     techStack: ['GHL', 'Make.com', 'Shopify'],
     banner: '/projects/ghl-lead-automation/banner.jpg', // full-width top image
+    image: '/projects/b2b-partner-lifecycle/banner.jpg',
     description:
       'An automated pipeline that captures leads, tags them by source, and routes them to the right sales rep without manual entry.',
     steps: [
