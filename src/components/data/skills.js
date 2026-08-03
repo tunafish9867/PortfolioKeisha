@@ -2,7 +2,7 @@ export const skills = [
   {
     id: 'workflow-automation',
     title: 'Workflow Automation',
-    image: '/skills/workflow-automation.jpg',
+    image: '/skills/workflow-automation.png',
     description:
       'Designing multi-step automations across Make.com, GoHighLevel, and ClickUp that replace manual, repetitive processes with reliable, self-running systems.',
     filterTech: ['Make.com', 'GHL', 'ClickUp API'],
