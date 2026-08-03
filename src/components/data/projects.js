@@ -73,5 +73,54 @@ export const projects = [
         description: 'Renewal and revocation decisions that used to take days now resolve automatically each month.',
       },
     ],
-},
+  },
+  {
+    id: 'ghl-product-updates-via-api',
+    title: 'GoHighLevel Product Pricing Sync via API',
+    image: '/projects/ghl-product-updates/banner.jpg',
+    techStack: ['Zapier', 'GoHighLevel API', 'Google Sheets', 'REST API', 'Webhooks'],
+    banner: '/projects/ghl-product-updates/banner.jpg',
+    description:
+      "Automation connecting a client's Google Sheets pricing tool directly to their GoHighLevel product catalog, so updating a price in the spreadsheet automatically updates the live product price in GHL — no manual double entry.",
+    steps: [
+      {
+        image: '/projects/ghl-product-updates/step1.png',
+        title: 'Price Edited in Google Sheets',
+        description:
+          'The client updates a product price directly in the designated pricing sheet — the single point of entry for the whole workflow.',
+      },
+      {
+        image: '/projects/ghl-product-updates/step2.png',
+        title: 'Change Detected',
+        description:
+          'A Zapier trigger watches the sheet for row updates, specifically monitoring the total-price column for a new value.',
+      },
+      {
+        image: '/projects/ghl-product-updates/step3.png',
+        title: 'Price Formatted for the API',
+        description:
+          'Zapier pulls the updated value and maps it to the corresponding product ID and price field expected by the GoHighLevel API.',
+      },
+      {
+        image: '/projects/ghl-product-updates/step5.png',
+        title: 'Product Price Updated in GHL',
+        description:
+          "GoHighLevel processes the request, updates the live product and the new price is reflected in GoHighLevel within 2-3 minutes of the original spreadsheet edit, completing the loop. — no manual entry required.",
+      }
+    ],
+    results: [
+      {
+        title: 'No More Manual Double Entry',
+        description: 'Price updates now flow from the spreadsheet straight into the live product catalog instead of being re-typed into GHL by hand.',
+      },
+      {
+        title: '2-3 Minute Sync Time',
+        description: 'Verified end-to-end test showed spreadsheet edits reflected in GoHighLevel within minutes.',
+      },
+      {
+        title: 'Protected Against Breakage',
+        description: 'Locked calculation cells prevent accidental edits to the formulas from silently breaking the automation.',
+      },
+    ],
+  },
 ];
