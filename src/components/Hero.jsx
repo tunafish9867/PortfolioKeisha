@@ -39,6 +39,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="/Keisha_Lorejo_Resume.pdf" download="Keisha_Lorejo_Resume.pdf" className="btn btn-primary">Download resume</a>
+            <a href="/projects" className="btn btn-outline">Check My Work</a>
           </div>
         </div>
       </div>
