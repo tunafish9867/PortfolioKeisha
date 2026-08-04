@@ -183,6 +183,7 @@ export const projects = [
       'A selection of Shopify storefronts designed and built for clients — custom theming, product page layouts, and storefront structure. Client branding has been kept, sensitive business details have not.',
     images: [
       '/projects/shopify-storefront-builds/01.png',
+      '/projects/shopify-storefront-builds/02.png',
     ],
   },
 ];
