@@ -56,6 +56,33 @@
   margin-bottom: 56px;
 }
 
+/* ===== Gallery: image grid only ===== */
+.project-gallery-section {
+  padding: 16px 0 96px;
+}
+
+.project-gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.gallery-image img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-disclaimer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+}
+
 /* ===== Steps: alternating two-column rows ===== */
 .project-steps {
   padding: 32px 0 64px;

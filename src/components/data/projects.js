@@ -172,4 +172,16 @@ export const projects = [
       },
     ],
   },
+  {
+    id: 'shopify-storefront-builds',
+    title: 'Shopify Storefront Builds',
+    type: 'gallery',
+    image: '/projects/shopify-storefront-builds/01.jpg',
+    techStack: ['Shopify', 'Liquid', 'Custom Theming'],
+    description:
+      'A selection of Shopify storefronts designed and built for clients — custom theming, product page layouts, and storefront structure. Client branding has been kept, sensitive business details have not.',
+    images: [
+      '/projects/shopify-storefront-builds/01.png',
+    ],
+  },
 ];

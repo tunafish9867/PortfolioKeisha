@@ -41,53 +41,74 @@ export default function ProjectDetail() {
         </div>
       </div>
 
-      {/* Steps */}
-      <div className="project-steps">
-        <div className="container">
-          <h2 className="section-heading">How The Workflow Works</h2>
+      {project.type === 'gallery' ? (
+        /* Gallery-style project: just the images, full stop */
+        <div className="project-gallery-section">
+          <div className="container">
+            <div className="project-gallery-grid">
+              {project.images.map((src, index) => (
+                <div className="gallery-image" key={index}>
+                  <img src={src} alt={`${project.title} screenshot ${index + 1}`} />
+                </div>
+              ))}
+            </div>
 
-          <div className="steps-list">
-            {project.steps.map((step, index) => (
-              <div className="step-row" key={index}>
-                <div className="step-image">
-                  <img src={step.image} alt={step.title} />
-                </div>
-                <div className="step-description">
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                </div>
-              </div>
-            ))}
+            <p className="project-disclaimer">
+              Shown for portfolio and demonstration purposes only. Client-identifying details have been altered or removed, and all trademarks, brand names, and content belong to their respective owners.
+            </p>
           </div>
         </div>
-      </div>
+      ) : (
+        <>
+          {/* Steps */}
+          <div className="project-steps">
+            <div className="container">
+              <h2 className="section-heading">How The Workflow Works</h2>
 
-      {/* Results */}
-      <div className="project-results-section">
-        <div className="container">
-          <h2 className="section-heading">Results</h2>
-
-          <div className="results-grid">
-            {project.results.map((result) => (
-              <div className="result-card" key={result.title}>
-                <svg
-                  className="result-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  <circle cx="12" cy="12" r="9" />
-                  <circle cx="12" cy="12" r="5" />
-                  <circle cx="12" cy="12" r="1" />
-                </svg>
-                <h3>{result.title}</h3>
-                <p>{result.description}</p>
+              <div className="steps-list">
+                {project.steps.map((step, index) => (
+                  <div className="step-row" key={index}>
+                    <div className="step-image">
+                      <img src={step.image} alt={step.title} />
+                    </div>
+                    <div className="step-description">
+                      <h3>{step.title}</h3>
+                      <p>{step.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </div>
+
+          {/* Results */}
+          <div className="project-results-section">
+            <div className="container">
+              <h2 className="section-heading">Results</h2>
+
+              <div className="results-grid">
+                {project.results.map((result) => (
+                  <div className="result-card" key={result.title}>
+                    <svg
+                      className="result-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <circle cx="12" cy="12" r="5" />
+                      <circle cx="12" cy="12" r="1" />
+                    </svg>
+                    <h3>{result.title}</h3>
+                    <p>{result.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </article>
   );
 }
