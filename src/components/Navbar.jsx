@@ -6,7 +6,6 @@ const NAV_LINKS = [
   { label: 'Home', to: '/', type: 'route' },
   { label: 'Projects', to: '/projects', type: 'route' },
   { label: 'Skills', to: '/skills', type: 'route' },
-  { label: 'Contact', to: '/#contact', type: 'anchor' },
 ];
 
 export default function Navbar() {
