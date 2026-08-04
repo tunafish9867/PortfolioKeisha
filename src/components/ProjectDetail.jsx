@@ -42,15 +42,31 @@ export default function ProjectDetail() {
       </div>
 
       {project.type === 'gallery' ? (
-        /* Gallery-style project: just the images, full stop */
+        /* Gallery-style project: website screenshots shown in a browser frame */
         <div className="project-gallery-section">
           <div className="container">
             <div className="project-gallery-grid">
-              {project.images.map((src, index) => (
-                <div className="gallery-image" key={index}>
-                  <img src={src} alt={`${project.title} screenshot ${index + 1}`} />
-                </div>
-              ))}
+              {project.images.map((image, index) => {
+                const src = typeof image === 'string' ? image : image.src;
+                const label = typeof image === 'string' ? null : image.label;
+                return (
+                  <div className="browser-frame" key={index}>
+                    <div className="browser-frame-bar">
+                      <span className="browser-dot browser-dot-red" />
+                      <span className="browser-dot browser-dot-yellow" />
+                      <span className="browser-dot browser-dot-green" />
+                      <span className="browser-frame-url">
+                        {label || project.title}
+                      </span>
+                    </div>
+                    <div className="browser-frame-viewport">
+                      <a href={src} target="_blank" rel="noopener noreferrer">
+                        <img src={src} alt={`${project.title} screenshot ${index + 1}`} />
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             <p className="project-disclaimer">
