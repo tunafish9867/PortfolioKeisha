@@ -86,7 +86,7 @@ export const projects = [
           'The client updates a product price directly in the designated pricing sheet — the single point of entry for the whole workflow.',
       },
       {
-        anim: { variant: 'branch', nodes: ['sheets', 'qb', 'records',] },
+        anim: { variant: 'branch', nodes: ['sheets', 'qb', 'record',] },
         title: 'Price Formatted for the API',
         description:
           'Zapier pulls the updated value and maps it to the corresponding product ID and price field expected by the GoHighLevel API.',
