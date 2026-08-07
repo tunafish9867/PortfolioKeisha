@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { projects } from './data/projects';
+import StepAnimation from './StepAnimation';
 import './ProjectDetail.css';
 
 export default function ProjectDetail() {
@@ -85,7 +86,14 @@ export default function ProjectDetail() {
                 {project.steps.map((step, index) => (
                   <div className="step-row" key={index}>
                     <div className="step-image">
-                      <img src={step.image} alt={step.title} />
+                      {step.anim ? (
+                        <StepAnimation
+                          variant={step.anim.variant}
+                          nodes={step.anim.nodes}
+                        />
+                      ) : (
+                        <img src={step.image} alt={step.title} />
+                      )}
                     </div>
                     <div className="step-description">
                       <h3>{step.title}</h3>

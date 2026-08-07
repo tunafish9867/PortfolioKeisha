@@ -1,0 +1,165 @@
+.step-anim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 10px);
+  min-height: 160px;
+}
+
+/* Circular icon badge. border-box keeps every circle the same 52px
+   regardless of border width changing between states. */
+.step-anim-node {
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.55);
+  animation: stepNodeLight 3s ease-in-out infinite;
+}
+
+.step-anim-wire {
+  width: 64px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.18);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.step-anim-dot {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent, #c9a2ff);
+  animation: stepDotTravel 3s ease-in-out infinite;
+}
+
+/* Stacked column used by the branch and merge variants */
+.step-anim-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Curved connectors for branch/merge. Sized inline from JS so the geometry
+   matches the node count; only appearance lives here. */
+.step-anim-fan {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.step-anim-fan-path {
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 2;
+}
+
+/* Rides the same bezier the path is drawn from — offset-path is set inline.
+   offset-anchor centers the dot on the curve instead of hanging it off the
+   top-left corner. */
+.step-anim-fan-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent, #c9a2ff);
+  offset-anchor: 50% 50%;
+  offset-rotate: 0deg;
+  animation: stepFanTravel 3s ease-in-out infinite;
+}
+
+@keyframes stepFanTravel {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  42% {
+    offset-distance: 100%;
+    opacity: 1;
+  }
+  52%,
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes stepNodeLight {
+  0%,
+  3% {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.55);
+  }
+  9%,
+  34% {
+    background: rgba(201, 162, 255, 0.18);
+    border-color: var(--accent, #c9a2ff);
+    color: #fff;
+  }
+  28%,
+  100% {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+/* Fades out at the far end rather than snapping back, so the reset
+   isn't visible as the dot teleporting backwards. */
+@keyframes stepDotTravel {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  42% {
+    left: calc(100% - 8px);
+    opacity: 1;
+  }
+  52%,
+  100% {
+    left: calc(100% - 8px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .step-anim-wire {
+    width: 44px;
+  }
+}
+
+/* Hold everything in the lit state so the diagram still reads as
+   connected when motion is switched off. */
+@media (prefers-reduced-motion: reduce) {
+  .step-anim-node {
+    animation: none;
+    background: rgba(201, 162, 255, 0.18);
+    border-color: var(--accent, #c9a2ff);
+    color: #fff;
+  }
+
+  .step-anim-dot,
+  .step-anim-fan-dot {
+    animation: none;
+    opacity: 0;
+  }
+}
